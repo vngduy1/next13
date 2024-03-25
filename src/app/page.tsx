@@ -1,22 +1,13 @@
 import "@/styles/app.css";
-import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "HomePage",
+  description: "Description",
+};
 
 export default function Home() {
   return (
-    <div>
-      <ul>
-        <li>
-          <Link href="/facebook">
-            <div className="red">Facebook</div>
-          </Link>
-        </li>
-        <li>
-          <Link href="/google">google</Link>
-        </li>
-        <li>
-          <Link href="/youtube">Youtube</Link>
-        </li>
-      </ul>
-    </div>
+    <div style={{ minHeight: "90vh", backgroundColor: "#ccc" }}>Home Page</div>
   );
 }
